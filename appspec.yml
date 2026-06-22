@@ -1,8 +1,9 @@
 version: 0.0
 os: linux
 files:
-  - source: dist/my-angular-project
+  - source: /dist/my-angular-project
     destination: /var/www/my-angular-project
+file_exists_behavior: OVERWRITE
 permissions:
   - object: /var/www/my-angular-project
     pattern: '**'
